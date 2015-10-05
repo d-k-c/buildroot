@@ -1,0 +1,28 @@
+From 06e3674aeb69170351f1d21fc67e1e8376dff27b Mon Sep 17 00:00:00 2001
+From: Damien Riegel <damien.riegel@savoirfairelinux.com>
+Date: Tue, 6 Oct 2015 16:44:10 -0400
+Subject: [PATCH] ts4800: add CONFIG_OF_LIBFDT
+
+This will allow to pass a device tree to the kernel.
+
+Signed-off-by: Damien Riegel <damien.riegel@savoirfairelinux.com>
+---
+ include/configs/ts4800.h | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/include/configs/ts4800.h b/include/configs/ts4800.h
+index 21f1555..1624a1b 100644
+--- a/include/configs/ts4800.h
++++ b/include/configs/ts4800.h
+@@ -24,6 +24,8 @@
+ 
+ #define CONFIG_HW_WATCHDOG
+ 
++#define CONFIG_OF_LIBFDT
++
+ #define CONFIG_MACH_TYPE	MACH_TYPE_TS48XX
+ 
+ /* text base address used when linking */
+-- 
+2.1.4
+
